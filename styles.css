@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow questions to wrap to the next line */
+    justify-content: space-between;
+    /* Spread questions horizontally */
+}
+
+h1 {
+    font-size: 24px;
+    width: 100%;
+    /* Make the title span the full width */
+}
+
+.question {
+    width: calc(45% - 10px);
+    /* Set a specific width for each question box with margins */
+    border: 2px solid #0073e6;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.choices li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+#results {
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+}
